@@ -1,9 +1,14 @@
+package classes;
+
 public class Income {
 
     String incomeType;
     String date;
     int    incomeAmount;
 
+    public Income(){
+
+    }
     public String getIncomeType() {
         return incomeType;
     }
@@ -26,5 +31,10 @@ public class Income {
 
     public void setIncomeAmount(int incomeAmount) {
         this.incomeAmount = incomeAmount;
+    }
+
+
+    public String toString(){
+        return "\nIncome Type: " + getIncomeType() + "\nDate: " + getDate() + "\nAmount: " + getIncomeAmount();
     }
 }
