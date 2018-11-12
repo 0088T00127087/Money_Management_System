@@ -1,7 +1,7 @@
 import classes.User;
 import classes.Income;
 
-public class DriverTest extends Tm {
+public class DriverTest  {
     public static void main (String [] args){
 
         Income in = new Income();
@@ -21,8 +21,7 @@ public class DriverTest extends Tm {
 
         System.out.println(guest.toString());
 
-        Tm a = new Tm();
-        a.templateMethod();
+
 
     }
 
