@@ -1,3 +1,4 @@
+import classes.Account;
 import classes.User;
 import classes.Income;
 
@@ -18,6 +19,13 @@ public class DriverTest  {
         guest.setAddress("Listowel");
         guest.setEmail("joe_enright@gmail.com");
         guest.setIncome(in);
+
+
+        Account acc = new Account();
+
+        acc.setAccountNumber();
+
+        System.out.printf("Account Number is ", acc.getAccountNumber());
 
         System.out.println(guest.toString());
 
