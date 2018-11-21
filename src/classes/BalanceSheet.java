@@ -2,11 +2,11 @@ package classes;
 
 
 
-public class Balance {
+public class BalanceSheet {
 
     int balance;
 
-    public Balance(){
+    public BalanceSheet(){
 
     }
 
