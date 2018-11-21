@@ -12,7 +12,7 @@ public class Account extends Expenditure  {
 
         Expenditure exp = new Expenditure();
         Income  income = new Income();
-        Object Balance = new Balance();
+        Object Balance = new BalanceSheet();
     }
 
 
