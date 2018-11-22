@@ -40,4 +40,9 @@ public class Expenditure {
     public void setFrequency(String frequency) {
         this.frequency = frequency;
     }
+
+    public String toString(){
+        return "Expenditure Type: " + getExpenType() + "\nExpenditure Amount: " +getAmount() + "Expenditure Frequency: " + getFrequency();
+    }
+
 }
