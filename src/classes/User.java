@@ -1,25 +1,27 @@
 package classes;
 
-public class User extends Income {
+public class User  {
 
-    int accountNumber;
+    int userId;
     String firstName;
     String lastName;
     String address;
     String email;
-    Income income;
+    String contactNo;
+
 
     public User(){
 
     }
 
-    public User(int accNumber, String fName, String lName, String cAddress, String email, Income income ){
-        this.accountNumber = accNumber;
+    public User(int accNumber, String fName, String lName, String cAddress, String email, String contactNo ){
+        this.userId = accNumber;
         this.firstName = fName;
         this.lastName = lName;
         this.address = cAddress;
         this.email = email;
-        this.income = income;
+        this.contactNo = contactNo;
+
     }
 
     public String getFirstName() {
@@ -55,20 +57,13 @@ public class User extends Income {
     }
 
     public int getAccountNumber() {
-        return accountNumber;
+        return userId;
     }
 
     public void setAccountNumber(int accountNumber) {
-        this.accountNumber = accountNumber;
+        this.userId = accountNumber;
     }
 
-    public void setIncome(Income income){this.income = income;}
-
-   public String toString(){
-        return "Account Number: " + getAccountNumber() + "\nName: "  + getFirstName() +
-                "\nSecond Name: " + getLastName() + "\nAddress: " + getAddress() +
-                "\nEmail: " + getEmail()  + income.toString();
-    }
 
 
 
