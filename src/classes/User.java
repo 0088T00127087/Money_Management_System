@@ -54,6 +54,15 @@ public class User  {
         this.userId = accountNumber;
     };
 
+    public String getContactNo(){
+        return this.contactNo;
+    }
+
+
+    public String toString(){
+        return"Account Number: " +getAccountNumber()+ "\nName: " + getFirstName()+"\nAddress: " + getAddress()+ "\nEmail: " + getEmail()+ "\nContact Number: " + getContactNo();
+    }
+
 
 
 

@@ -3,21 +3,19 @@ package classes;
 public class Income {
 
     String incomeType;
-    String frequency;
     int    incomeAmount;
+    String frequency;
 
-    public Income(String incomeType, String frequency, int incomeAmount) {
+    public Income(){}
+
+    public Income(String incomeType, int incomeAmount, String frequency) {
         this.incomeType = incomeType;
-        this.frequency = frequency;
         this.incomeAmount = incomeAmount;
+        this.frequency = frequency;
     }
 
-    public Income(String job, int i, String weekly) {
-    }
 
-    public Income() {
 
-    }
 
     public String getIncomeType() {
         return incomeType;

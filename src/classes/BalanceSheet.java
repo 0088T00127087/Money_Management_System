@@ -13,8 +13,7 @@ public class BalanceSheet {
 
     }
 
-    public BalanceSheet(String accNumber, Income income, Expenditure exp, double calculation, String freq) {
-    }
+
 
     public BalanceSheet(String accNumber, Income income, Expenditure exp,  String freq){
         this.accNumber = "";
@@ -23,9 +22,12 @@ public class BalanceSheet {
         this.frequency = "";
     }
 
+    public BalanceSheet(int accountNumber, Income income, Expenditure exp, String weekly) {
+    }
+
 
     public double getCalculation_of_expenditure(double incomeAmount, double exp){
-      calculation =   (income.incomeAmount - expenditure.amount);
+      calculation =   (incomeAmount - exp);
       return calculation;
     }
 
