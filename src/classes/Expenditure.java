@@ -13,6 +13,10 @@ public class Expenditure {
 
     }
 
+    public Expenditure() {
+
+    }
+
     public String getExpenType() {
         return ExpenType;
     }

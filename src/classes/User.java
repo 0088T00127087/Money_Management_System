@@ -3,8 +3,7 @@ package classes;
 public class User  {
 
     int userId;
-    String firstName;
-    String lastName;
+    String name;
     String address;
     String email;
     String contactNo;
@@ -14,55 +13,46 @@ public class User  {
 
     }
 
-    public User(int accNumber, String fName, String lName, String cAddress, String email, String contactNo ){
-        this.userId = accNumber;
-        this.firstName = fName;
-        this.lastName = lName;
-        this.address = cAddress;
+    public User(int userId, String name, String address, String email, String contactNo ){
+        this.userId = userId;
+        this.name = name;
+        this.address = address;
         this.email = email;
         this.contactNo = contactNo;
 
     }
 
     public String getFirstName() {
-        return firstName;
-    }
+        return name;
+    };
 
     public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
-    }
+        this.name = firstName;
+    };
 
     public String getAddress() {
         return address;
-    }
+    };
 
     public void setAddress(String address) {
         this.address = address;
-    }
+    };
 
     public String getEmail() {
         return email;
-    }
+    };
 
     public void setEmail(String email) {
         this.email = email;
-    }
+    };
 
     public int getAccountNumber() {
         return userId;
-    }
+    };
 
     public void setAccountNumber(int accountNumber) {
         this.userId = accountNumber;
-    }
+    };
 
 
 

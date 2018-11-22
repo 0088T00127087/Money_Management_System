@@ -5,7 +5,12 @@ public class Account  {
 
     int accNumber;
     User user = new User();
-    BalanceSheet blSheet = new BalanceSheet();
+    BalanceSheet blSheet;
+
+    public Account(){
+        user = new User();
+        blSheet  = new BalanceSheet();
+    }
 
 
     public void setAccNumber(int accNumber){
