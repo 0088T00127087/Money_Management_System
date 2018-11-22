@@ -42,7 +42,7 @@ public class Expenditure {
     }
 
     public String toString(){
-        return "Expenditure Type: " + getExpenType() + "\nExpenditure Amount: " +getAmount() + "Expenditure Frequency: " + getFrequency();
+        return "\nExpenditure Type: " + getExpenType() + "\nExpenditure Amount: " +getAmount() + "\nExpenditure Frequency: " + getFrequency();
     }
 
 }

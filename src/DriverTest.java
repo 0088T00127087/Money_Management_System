@@ -1,7 +1,9 @@
 import classes.*;
 
+import javax.swing.*;
+
 public class DriverTest  {
-    public static void main (String [] args){
+    public static void main (String [] args) throws ClassNotFoundException, UnsupportedLookAndFeelException, InstantiationException, IllegalAccessException {
 
 
         User user = new User(1234, "joe Enright","Listowel","joe@gmail.com", "08734343");
@@ -17,8 +19,13 @@ public class DriverTest  {
 
         System.out.println(user.toString());
         System.out.println(income.toString());
+        System.out.println(exp.toString());
 
         System.out.println("Calculation: " +blsheet.getCalculation_of_expenditure(income.getIncomeAmount(), exp.getAmount()));
+
+        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+        CreateUserAccount cua = new CreateUserAccount();
+        cua.setVisible(true);
 
 
     }
