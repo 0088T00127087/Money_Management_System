@@ -25,12 +25,17 @@ public class CreateUserAccount extends JFrame {
         submitNewUserInfo.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(rootPanel, "User Created");
+                //JOptionPane.showMessageDialog(rootPanel, "User Created");
                 User user = new User();
                 user.setFirstName(nameTextField.getText());
+                nameTextField.setText("");
                 user.setAddress(addressTextField.getText());
+                addressTextField.setText("");
                 user.setEmail(emailTextField.getText());
+                emailTextField.setText("");
                 user.setContactNo(contactNoTextField.getText());
+                contactNoTextField.setText("");
+                user.setAccountNumber(user.generateRandomAccountNumber());
                 JOptionPane.showMessageDialog(rootPanel, user.toString());
             }
         });

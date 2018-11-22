@@ -1,8 +1,10 @@
+
 package classes;
+import java.util.Random;
 
 public class User  {
 
-    int userId;
+    String userId;
     String name;
     String address;
     String email;
@@ -13,7 +15,7 @@ public class User  {
 
     }
 
-    public User(int userId, String name, String address, String email, String contactNo ){
+    public User(String userId, String name, String address, String email, String contactNo ){
         this.userId = userId;
         this.name = name;
         this.address = address;
@@ -46,11 +48,11 @@ public class User  {
         this.email = email;
     };
 
-    public int getAccountNumber() {
+    public String getAccountNumber() {
         return userId;
     };
 
-    public void setAccountNumber(int accountNumber) {
+    public void setAccountNumber(String accountNumber) {
         this.userId = accountNumber;
     };
 
@@ -63,6 +65,24 @@ public class User  {
 
     public String toString(){
         return"Account Number: " +getAccountNumber()+ "\nName: " + getFirstName()+"\nAddress: " + getAddress()+ "\nEmail: " + getEmail()+ "\nContact Number: " + getContactNo();
+    }
+
+    public String  generateRandomAccountNumber(){
+        Random rand = new Random();
+        String accNoGen = "IE";
+        for (int i = 0; i < 14; i++)
+        {
+            int n = rand.nextInt(10) + 0;
+            accNoGen += Integer.toString(n);
+        }
+        for (int i = 0; i < 16; i++)
+        {
+            if(i % 4 == 0)
+                System.out.print(" ");
+            System.out.print(accNoGen.charAt(i));
+        }
+
+        return accNoGen;
     }
 
 

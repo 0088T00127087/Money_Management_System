@@ -3,7 +3,7 @@ package classes;
 
 public class Account  {
 
-    int accNumber;
+    String accNumber;
     User user = new User();
     BalanceSheet blSheet;
 
@@ -13,11 +13,11 @@ public class Account  {
     }
 
 
-    public void setAccNumber(int accNumber){
+    public void setAccNumber(String accNumber){
         this.accNumber = accNumber;
     }
 
-    public int getAccNumber(){
+    public String getAccNumber(){
         return accNumber;
     }
 
