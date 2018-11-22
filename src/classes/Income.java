@@ -3,7 +3,7 @@ package classes;
 public class Income {
 
     String incomeType;
-    String date;
+    String frequency;
     int    incomeAmount;
 
     public Income(){
@@ -18,11 +18,11 @@ public class Income {
     }
 
     public String getDate() {
-        return date;
+        return frequency;
     }
 
     public void setDate(String date) {
-        this.date = date;
+        this.frequency = date;
     }
 
     public int getIncomeAmount() {
