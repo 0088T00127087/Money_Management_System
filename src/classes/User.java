@@ -54,6 +54,8 @@ public class User  {
         this.userId = accountNumber;
     };
 
+    public void setContactNo(String contactNo){ this.contactNo = contactNo;}
+
     public String getContactNo(){
         return this.contactNo;
     }

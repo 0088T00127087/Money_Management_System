@@ -23,9 +23,14 @@ public class DriverTest  {
 
         System.out.println("Calculation: " +blsheet.getCalculation_of_expenditure(income.getIncomeAmount(), exp.getAmount()));
 
-        UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-        CreateUserAccount cua = new CreateUserAccount();
-        cua.setVisible(true);
+        SwingUtilities.invokeLater(new Runnable() {
+            @Override
+            public void run() {
+                CreateUserAccount cua = new CreateUserAccount();
+                cua.setVisible(true);
+                cua.setTitle("Create a New User");
+            }
+        });
 
 
     }
