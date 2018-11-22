@@ -15,7 +15,9 @@ public class DriverTest  {
 
         Account account = new Account();
 
-        System.out.println("Account Number: " + user.getAccountNumber() + "\nName: "+  user.getFirstName() +"\nIncome: " + income.getIncomeAmount() + "\nExpenditure: " + exp.getExpenType());
+        System.out.println(user.toString());
+        System.out.println(income.toString());
+
         System.out.println("Calculation: " +blsheet.getCalculation_of_expenditure(income.getIncomeAmount(), exp.getAmount()));
 
 

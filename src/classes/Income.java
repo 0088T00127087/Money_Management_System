@@ -41,5 +41,9 @@ public class Income {
         this.incomeAmount = incomeAmount;
     };
 
+    public String toString(){
+        return "\nIncome Type: " + getIncomeType()+ "\nIncome Amount: " + getIncomeAmount() + "\nIncome Frequency" + getFrequency();
+    }
+
 
 }
