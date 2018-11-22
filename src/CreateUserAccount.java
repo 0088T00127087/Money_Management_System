@@ -30,7 +30,8 @@ public class CreateUserAccount extends JFrame {
                 user.setFirstName(nameTextField.getText());
                 user.setAddress(addressTextField.getText());
                 user.setEmail(emailTextField.getText());
-                user.se
+                user.setContactNo(contactNoTextField.getText());
+                JOptionPane.showMessageDialog(rootPanel, user.toString());
             }
         });
     }
