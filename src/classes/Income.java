@@ -42,7 +42,7 @@ public class Income {
     };
 
     public String toString(){
-        return "\nIncome Type: " + getIncomeType()+ "\nIncome Amount: " + getIncomeAmount() + "\nIncome Frequency" + getFrequency();
+        return "\nIncome interfaces.Type: " + getIncomeType()+ "\nIncome Amount: " + getIncomeAmount() + "\nIncome Frequency" + getFrequency();
     }
 
 
