@@ -18,16 +18,9 @@ public class Credit implements Item {
         this.creditType = type;
     }
 
+    public void setAmount(int amount){ this.creditAmount = amount; }
 
-    public void setAmount(int amount){
-        this.creditAmount = amount;
-
-    }
-
-    public void setFrequency(String frequency){
-        this.creditFrequency = frequency;
-
-    }
+    public void setFrequency(String frequency){ this.creditFrequency = frequency; }
 
     public String toString(){
         return "Type: " + creditType + "\nAmount: " + creditAmount + "\nFrequency: " + creditFrequency;

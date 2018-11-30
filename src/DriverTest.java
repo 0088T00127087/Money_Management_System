@@ -5,15 +5,21 @@ import interfaces.Item;
 public class DriverTest  {
     public static void main (String [] args)  {
 
-        Item job = new ItemTypeDecorator(new Credit());
+        Item credit = new ItemTypeDecorator(new Credit());
 
-        job.setType("Job");
-        job.setAmount(2500);
-        job.setFrequency("Monthly");
+        credit.setType("Job");
+        credit.setAmount(2500);
+        credit.setFrequency("Monthly");
+        credit.display();
+        credit.toString();
 
-        job.display();
 
-        job.toString();
+        Item debit = new ItemTypeDecorator(new Debit());
+        debit.setType("Rent");
+        debit.setAmount(500);
+        debit.setFrequency("Monthly");
+
+        debit.display();
 
 
 }
