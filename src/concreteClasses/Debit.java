@@ -3,20 +3,27 @@ import interfaces.Item;
 
 public class Debit implements Item {
 
-    protected String debitType = "";
+    protected final String debitType = "DEBIT";
+    protected String itemName = "";
     protected int debitAmount = 0;
     protected String debitFrequency = "";
 
     public void display(){
         System.out.println(debitType);
+        System.out.println(itemName);
         System.out.println(debitAmount);
         System.out.println(debitFrequency);
     }
 
     @Override
-    public void setType(String type) {
-        this.debitType = type;
+    public void setItemName(String itemName){
+        this.itemName = itemName;
     }
+
+    //@Override
+   // public void setType(String type) {
+
+    //}
 
     @Override
     public void setAmount(int amount){

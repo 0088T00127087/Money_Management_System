@@ -3,20 +3,23 @@ import interfaces.Item;
 
 public class Credit implements Item {
 
-    protected String creditType = "";
+    protected final String creditType = "CREDIT";
+    protected String itemName = "";
     protected int creditAmount = 0;
     protected String creditFrequency = "";
 
     public void display(){
         System.out.println(creditType);
+        System.out.println(itemName);
         System.out.println(creditAmount);
         System.out.println(creditFrequency);
     }
 
-
-    public void setType(String type){
-        this.creditType = type;
+    public void setItemName(String itemName){
+        this.itemName = itemName;
     }
+
+    //protected void setType(String type){ }
 
     public void setAmount(int amount){ this.creditAmount = amount; }
 

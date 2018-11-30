@@ -7,7 +7,7 @@ public class DriverTest  {
 
         Item credit = new ItemTypeDecorator(new Credit());
 
-        credit.setType("Job");
+        credit.setItemName("Job");
         credit.setAmount(2500);
         credit.setFrequency("Monthly");
         credit.display();
@@ -15,7 +15,7 @@ public class DriverTest  {
 
 
         Item debit = new ItemTypeDecorator(new Debit());
-        debit.setType("Rent");
+        debit.setItemName("Rent");
         debit.setAmount(500);
         debit.setFrequency("Monthly");
 

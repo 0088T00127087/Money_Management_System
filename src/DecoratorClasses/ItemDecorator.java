@@ -12,8 +12,8 @@ public abstract class ItemDecorator implements Item {
         decoratedItem.display();
     }
 
-    public void setType(String type){
-        decoratedItem.setType(type);
+    public void setItemName(String type){
+        decoratedItem.setItemName(type);
     }
 
     public void setAmount(int amount){
