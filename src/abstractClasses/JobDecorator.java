@@ -1,5 +1,4 @@
 package abstractClasses;
-import interfaces.Income;
 
 
 public abstract class JobDecorator implements Income {
